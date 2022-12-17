@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.ghouse</groupId>
 	<artifactId>storybox</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>storybox</name>
 	<description>stories from your friends</description>
 	<properties>

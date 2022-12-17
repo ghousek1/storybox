@@ -7,8 +7,8 @@ RUN mvn -f /home/app/pom.xml clean test package
 
 # Package stage
 # FROM openjdk:8-jdk-alpine
-FROM openjdk:11-jre-slim-buster
-# FROM eclipse-temurin:11
+# FROM openjdk:11-jre-slim-buster
+FROM eclipse-temurin:11
 COPY --from=build /home/app/target/*.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","app.jar"]
