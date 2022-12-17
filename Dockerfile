@@ -11,7 +11,7 @@ RUN mvn -f /app/pom.xml clean test package
 # FROM openjdk:11-jre-slim-buster
 FROM adoptopenjdk/openjdk11-openj9:alpine
 COPY --from=build /app/target/*.jar /deployments/app.jar
-EXPOSE 8080
+EXPOSE 9000
 ENTRYPOINT ["java","-jar","/deployments/app.jar"]
 
 
