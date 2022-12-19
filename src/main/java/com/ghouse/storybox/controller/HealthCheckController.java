@@ -12,21 +12,11 @@ import com.ghouse.storybox.config.ConfigUtil;
 @RestController
 public class HealthCheckController {
 	
-	@Autowired
-	private ConfigUtil configUtil;
 
     @GetMapping("/health")
     public ResponseEntity<String> checkHealth() {
     
         return new ResponseEntity<>("SUCCESS", HttpStatus.OK);
-    }
-    
-    @GetMapping("/env-check")
-    public ResponseEntity<String> envCheck(@RequestParam String envKey) {
-    
-    	String envValue = configUtil.getProperty(envKey);
-    			
-        return new ResponseEntity<>(envValue, HttpStatus.OK);
     }
 
  
