@@ -14,8 +14,8 @@
 	<description>stories from your friends</description>
 	<properties>
 		<java.version>11</java.version>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<!-- <maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target> -->
 		<!-- <mongodb.version>3.12.8</mongodb.version> -->
 	</properties>
 
