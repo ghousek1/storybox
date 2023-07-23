@@ -15,7 +15,7 @@ public class HealthCheckController {
     @GetMapping("/health")
     public ResponseEntity<String> checkHealth() {
          System.out.println("health endpoint hitted");
-        return new ResponseEntity<>("SUCCESS", HttpStatus.OK);
+        return new ResponseEntity<>("HEALTH SUCCESS", HttpStatus.OK);
     }
 
  
